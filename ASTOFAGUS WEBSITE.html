@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>ASTOFAGUS home</title>
+    <link rel="shortcut icon" href="ASTOGAUS LOGO2.ico" type="image/x-icon">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 5px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: blue; 
+      border-radius: 5px;
+      width: 15px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: blue; 
+      width: 15px;
+
+    }
+    ::-webkit-scrollbar:hover {
+      background: skyblue; 
+      width: 15px;
+
+    }
+    </style>
+  </head>
+  <body>
+    <div id="loader"></div>
+    <div id="content">
+      <div class="intro">
+        <!--<div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>-->
+        <div class="flexbox">
+          <div class="search">
+            <div>
+              <input type="text" placeholder="Search . . ." required>
+            </div>
+          </div>
+        </div>
+        <div class="buton">
+
+          <button type="button" class="button button" >SHOP NOW</button>
+          <button class="button button1">ABOUT</button>
+          <button class="button button2">GAMES</button>
+          <button class="button button3">APPS</button>
+          <button class="button button4">COUPOUNS</button>
+          <button class="button button5">EVENTS</button>
+        
+        </div>
+      <div class="start">
+        <image src=" astofagus orgin.png"></image>
+    </div>
+    
+      <h1>WELCOME TO <br> ASTOFAGUS</h1>
+      <h2>Doing Business the Right Way</h2>
+       <br><br><hr>
+   </div>
+
+
+    <hr>
+      <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="Slide1.PNG" style="width: 100%">
+            <div class="text">GOLDEN RULES</div>
+
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="Slide3.PNG" style="width:100%">
+            <div class="text">RULE NO :1</div>
+
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="Slide4.PNG" style="width:100%">
+            <div class="text">RULE NO: 2</div>
+
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="Slide5.PNG" style="width:100%">
+            <div class="text">RULE NO: 3</div>
+
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="Slide6.PNG" style="width:100%">
+            <div class="text">RULE NO: 4</div>
+
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>;
+            <img src="Slide7.PNG" style="width:100%">
+            <div class="text">RULE NO:5</div>
+
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+
+        </div>
+        
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <script>
+        
+        mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+var loader;
+
+function loadNow(opacity) {
+    if (opacity <= 0) {
+        displayContent();
+    } else {
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+            loadNow(opacity - 0.05);
+        }, 50);
+    }
+}
+
+function displayContent() {
+    loader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loader');
+    loadNow(1);
+});
+      </script>
+      
+    
+    <br><br>
+    <image src="asto about-2-2.png" class="about"></image>
+  <br><br><hr>
+    <image src="always for your favour.png" class="favour"></image>
+
+    <section class="get_in_touch">
+      <form method=”POST” action=”http://formspree.io/your-email-address-goes-here">
+      <h4 class="title">Get In Touch</h4>
+
+      <div class="container">
+        <div class="contact-form-row">
+        <div class="form-field col-lg-6">
+          <input id="name" class="input-text" type="text" name="">
+          <label for="name" class="label">Name</label>
+        </div>
+
+        <div class="form-field col-lg-6">
+          <input id="email" class="input-text" type="email" name="">
+          <label for="email" class="label">Email</label>
+        </div>
+
+        <div class="form-field col-lg-6">
+          <input id="phone" class="input-text" type="number" name="">
+          <label for="phone" class="label">Phone No</label>
+        </div>
+
+        <div class="form-field col-lg-6">
+          <input id="message" class="input-text" type="message" name="">
+          <label for="message" class="label">Type Your Message Here</label>
+        </div>
+
+        <div class="form-field col-lg-6">
+          <input  class="submit-btn" type="submit" value = "submit" name="">
+        </div>
+
+        </div>
+      </div>
+      </form>
+    </section>
+    
+    <br><hr>
+   <footer>
+     <br>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="https://www.youtube.com/channel/UCTfTN4ZCpUjEjyN9H-BRoNg" target="blank" class="fa fa-youtube"></a>
+    <br>
+    <p>©Copyright 2021 astofagus</p>
+    <br>
+   </footer>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,3 @@
+    <label for="fname">FIRST NAME:</label><br>
+    <label for="lname">LAST NAME:</label>
+    <label for="pnum">PHONE NO:</label>
